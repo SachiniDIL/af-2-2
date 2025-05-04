@@ -1,0 +1,30 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+/* index.css */
+:root {
+  --color-bg: #f9fafb;
+  --color-text: #000000;
+  --header-background: #d58585;
+}
+
+.dark {
+  --color-bg: #101113;
+  --color-text: #f9fafb;
+  --header-background: #ffffff;
+}
+
+/* Global Body Styling */
+body {
+  background-color: var(--color-bg);
+  color: var(--color-text);
+  font-family: 'Poppins', sans-serif;
+  font-smooth: antialiased;
+  transition: background-color 0.3s, color 0.3s;
+}
+
+/* Smooth transition on all elements */
+* {
+  transition: background-color 0.3s ease, color 0.3s ease;
+}
